@@ -1,0 +1,236 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Tasveer: An image-downloading package in python &mdash; Tasveer 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> Tasveer
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Tasveer: An image-downloading package in python</a></li>
+<li><a class="reference internal" href="#installing-tasveer">Installing Tasveer</a></li>
+<li><a class="reference internal" href="#using-tasveer">Using Tasveer</a></li>
+</ul>
+</div>
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">Tasveer</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Tasveer: An image-downloading package in python</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="tasveer-an-image-downloading-package-in-python">
+<h1>Tasveer: An image-downloading package in python<a class="headerlink" href="#tasveer-an-image-downloading-package-in-python" title="Permalink to this headline">¶</a></h1>
+<p>It is a python package to quickly download a few images for testing/validation purposes.
+The following documentation will guide you through installation and usage of tasveer.</p>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="installing-tasveer">
+<h1>Installing Tasveer<a class="headerlink" href="#installing-tasveer" title="Permalink to this headline">¶</a></h1>
+<p>First you need to install tasveer on your system using the pip package manager.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">tasveer</span>
+</pre></div>
+</div>
+<p>This installs the package to your local machine.</p>
+</div>
+<div class="section" id="using-tasveer">
+<h1>Using Tasveer<a class="headerlink" href="#using-tasveer" title="Permalink to this headline">¶</a></h1>
+<p>After installing tasveer, you need to import it to use in python codes.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">tasveer</span> <span class="k">as</span> <span class="nn">tsv</span>
+</pre></div>
+</div>
+<p>Once this is done, the package can be used under the name ‘tsv’ in your python code.To initiate the download of images, we use the <code class="docutils literal notranslate"><span class="pre">download</span></code> funtion in the tasveer module.There are 2 ways to work with this function:</p>
+<ol class="arabic">
+<li><dl class="simple">
+<dt><strong>Without arguments</strong></dt><dd><p>If the function is called without arguments as <code class="docutils literal notranslate"><span class="pre">tsv.download()</span></code>,a prompt asking the following is generated-</p>
+<ul class="simple">
+<li><p><em>Query</em>: The query for which the images are to be generated. Example, if you enter “chocolates”, images of chocolates will be downloaded.</p></li>
+<li><p><em>Number of downloads</em>: The number of images to be downloaded.</p></li>
+<li><p><em>Size</em>: The size of images.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>With arguments</strong></dt><dd><p>The call to the function can also be done as-</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">tsv</span><span class="o">.</span><span class="n">download</span><span class="p">(</span><span class="n">query</span><span class="o">=</span><span class="s2">&quot;&lt;SEARCH_STRING&gt;&quot;</span><span class="p">,</span> <span class="n">count</span><span class="o">=</span><span class="s2">&quot;&lt;NUM_IMAGES_AS_INT&gt;&quot;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="s2">&quot;&lt;WIDTH&gt;&quot;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="s2">&quot;&lt;HEIGHT&gt;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>specifying the parameters within the call.</p>
+</dd>
+</dl>
+</li>
+</ol>
+<p>After this,the specified number of images will be downloaded in the current directory under the <strong>downloads</strong> folder.</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, Abhinav Srivastava
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
